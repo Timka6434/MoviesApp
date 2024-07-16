@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MoviesApp.Models
+﻿namespace MoviesApp.Models
 {
     public class Movie
     {
@@ -14,5 +8,9 @@ namespace MoviesApp.Models
         public string Description { get; set; }
         public string PosterUrl { get; set; }
         public bool IsFavorite { get; set; }
+        public string Director { get; set; }
+        public string Genre { get; set; }
+        public string Rating { get; set; }
+        public string Runtime { get; set; }
     }
 }

@@ -8,6 +8,10 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.DataContext>
+        <local:MainViewModel />
+    </Page.DataContext>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -19,7 +23,7 @@
             <Button Content="Избранное" Click="NavigateToFavorites_Click" Margin="10,0,0,0"/>
         </StackPanel>
 
-        <GridView x:Name="FilmsGridView" Margin="10" Grid.Row="1">
+        <GridView ItemsSource="{Binding Movies}" Margin="10" Grid.Row="1" ItemClick="MoviesGridView_ItemClick" IsItemClickEnabled="True">
             <GridView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <ItemsWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="5"/>
