@@ -1,1 +1,0 @@
-G:\VS projects\MoviesApp\MoviesApp\MoviesApp.csproj;x64
