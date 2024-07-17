@@ -63,5 +63,14 @@ namespace MoviesApp
                 Frame.GoBack();
             }
         }
+
+        private void FavoritesGridView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            if (e.ClickedItem is Movie movie)
+            {
+                var frame = (Frame)Windows.UI.Xaml.Window.Current.Content;
+                frame.Navigate(typeof(MovieDetailsPage), movie);
+            }
+        }
     }
 }

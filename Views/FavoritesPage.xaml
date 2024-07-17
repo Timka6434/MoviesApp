@@ -18,7 +18,7 @@
             <Button Content="Назад" Click="BackButton_Click" Margin="10"/>
         </StackPanel>
 
-        <GridView x:Name="FavoritesGridView" Margin="10" Grid.Row="1">
+        <GridView x:Name="FavoritesGridView" Margin="10" Grid.Row="1" ItemClick="FavoritesGridView_ItemClick" IsItemClickEnabled="True">
             <GridView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <ItemsWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="5"/>

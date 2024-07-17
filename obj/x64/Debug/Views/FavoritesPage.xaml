@@ -18,7 +18,7 @@
             <Button x:ConnectionId='5' Content="Назад"                          Margin="10"/>
         </StackPanel>
 
-        <GridView x:ConnectionId='2' x:Name="FavoritesGridView" Margin="10" Grid.Row="1">
+        <GridView x:ConnectionId='2' x:Name="FavoritesGridView" Margin="10" Grid.Row="1"                                         IsItemClickEnabled="True">
             <GridView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <ItemsWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="5"/>

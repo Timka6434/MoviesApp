@@ -36,7 +36,7 @@ namespace MoviesApp.Models
                 // Вывод отладочной информации о статусе ответа
                 Debug.WriteLine($"Response Status Code: {(int)responseMessage.StatusCode} {responseMessage.ReasonPhrase}");
 
-                responseMessage.EnsureSuccessStatusCode(); // Здесь происходит выброс исключения при ошибке 401
+                responseMessage.EnsureSuccessStatusCode(); // Ответ в случае ошибки, выводит в консоль
                 string responseData = await responseMessage.Content.ReadAsStringAsync();
                 return responseData;
             }
